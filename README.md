@@ -3,14 +3,13 @@
 ## Project Description
 Starbucks Offer Dataset is one of the datasets that students can choose from to complete their capstone project for Udacity’s Data Science Nanodegree. The dataset contains simulated data that mimics customers' behavior after they received Starbucks offers. The data is collected via Starbucks rewards mobile apps and the offers were sent out once every few days to the users of the mobile app.
 
-The goal of this project was not defined by Udacity. Thus, it is open-ended. I decided to investigate in the situation where customers used an offer without viewing it. I wanted to understand who are these customers and how we can avoid or minimize the chance of this from happening. 
 
-## Project Result
-The first part of the question was addressed by in-depth data engineering and EDA. It turns out that all customers are equally likely to use an offer without viewing it. The demographics do not make a difference. However, the design of the offer makes a big difference, especially its promotion channel and the length of the offer.
+    The program used to create the data simulates how people make purchasing decisions and how those decisions are influenced by promotional offers.
+    Each person in the simulation has some hidden traits that influence their purchasing patterns and are associated with their observable traits. People produce various events, including receiving offers, opening offers, and making purchases.
+    As a simplification, there are no explicit products to track. Only the amounts of each transaction or offer are recorded.
+    There are three types of offers that can be sent: buy-one-get-one (BOGO), discount, and informational. In a BOGO offer, a user needs to spend a certain amount to get a reward equal to that threshold amount. In a discount, a user gains a reward equal to a fraction of the amount spent. In an informational offer, there is no reward, but neither is there a requisite amount that the user is expected to spend. Offers can be delivered via multiple channels.
+    The basic task is to use the data to identify which groups of people are most responsive to each type of offer, and how best to present each type of offer for yesr 2018 ic complet offer.
 
-I built a machine learning model using logistic regression to address the second part of the question. I hope by building a model that can predict if a customers will waste an offer or not, we can be giving offers with awearness and considerations. The model achived a 71% in both accuracy score and cross-validation score. I also used a confusion matrix. Further details are in my blog post.
-
-I wrote a blog post to walk through the steps I took to achieve the result. The medium blog post can be accessed [here](https://linnndachen.medium.com/starbucks-offer-dataset-udacity-capstone-7b562843ff47).
 
 ## Main Files: Project Structure
 ```
@@ -24,6 +23,33 @@ I wrote a blog post to walk through the steps I took to achieve the result. The 
 ├── Starbucks_Capstone_notebook.ipynb 
 
 ```
+
+Datasets
+
+portfolio.json (10 offers x 6 fields) - metadata for each offer (duration, type, etc.)
+
+    id (str) - offer ID
+    offer_type (str) - type of offer (BOGO, discount, informational)
+    difficulty (int) - minimum required spend to complete an offer
+    reward (int) - reward given for completing an offer
+    duration (int) - time for offer to be open, in days
+    channels (list[str]) - web, email, mobile, social
+
+profile.json (17,000 users x 5 fields) - demographic data for each user
+
+    age (int) - age of the customer (missing values are encoded as 118)
+    became_member_on (int) - date when customer created an app account
+    gender (str) - gender of the customer (some entries contain 'O' for other rather than 'M' or 'F')
+    id (str) - customer ID
+    income (float) - customer's income
+
+transcript.json (306,534 transactions x 4 fields)- records for events (transactions, offers received, offers viewed, and offers completed)
+
+    event (str) - record description (transaction, offer received, offer viewed, etc.)
+    person (str) - customer ID
+    time (int) - time in hours since start of test (the data begins at time t = 0)
+    value - (dict) - either an offer ID or transaction amount depending on the record
+
 The *data* folder contains the 3 datasets provided by Udacity.
 
 The *Starbucks_Capstone_notebook.ipynb* is where all the analysis is.
