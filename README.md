@@ -10,11 +10,11 @@ Each person in the simulation has some hidden traits that influence their purcha
 ├── data          
 |   ├── portfolio.json
 |   ├── profile.json
-|   └──transcript.json
+|   └── transcript.zip >> transcript.json
 |
 ├── README.md
-|
 ├── Starbucks_Capstone_notebook.ipynb 
+├── Starbucks_Capstone_notebook.html
 
 ```
 
