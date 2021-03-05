@@ -23,8 +23,6 @@ I wrote a blog post to walk through the steps I took to achieve the result. The 
 |
 ├── Starbucks_Capstone_notebook.ipynb 
 |
-├── firstEvent.pkl
-└── secondEvent.pkl
 ```
 The *data* folder contains the 3 datasets provided by Udacity.
 
