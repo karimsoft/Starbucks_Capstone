@@ -22,13 +22,11 @@ I wrote a blog post to walk through the steps I took to achieve the result. The 
 ├── README.md
 |
 ├── Starbucks_Capstone_notebook.ipynb 
-|
+
 ```
 The *data* folder contains the 3 datasets provided by Udacity.
 
 The *Starbucks_Capstone_notebook.ipynb* is where all the analysis is.
-
-The last two pickel files are two dataframes which took a long time to process during my analysis. They are saved in pickel files so that it only need to be run for 1 time.
 
 ## Tech Stack
 - **Python3** is the main language.
