@@ -53,10 +53,6 @@ The *Starbucks_Capstone_notebook.ipynb* is where all the analysis is.
 
 ## Author and Acknowledgement
 
-- Linda Chen is the only author of this project.
-
-- Starbucks provided this dataset.
-
 - [Udacity](https://www.udacity.com/) provided this Data Science Nanodegree Program and the access to this dataset.
 
 - [medium](https://karimsoft.medium.com/karimsoft-starbucks-capstone-58821de875ac)
