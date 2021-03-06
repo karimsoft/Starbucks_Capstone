@@ -3,7 +3,7 @@
 ## Project Overviewn
 This is an in-depth data analysis and simulates data of how mobile app users respond to offers sent out by Starbucks. With a better understanding of customer behavior, Starbucks would be able to improve by promotional offers.
 
-## Questions:
+## Problem Statement
 - What is the predict for event when have gender, age group, income group and offer type will complet offer or not in 20018 year ?
 - What is the predict for most offer type in 20018 year ?
  
