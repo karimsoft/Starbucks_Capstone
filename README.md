@@ -1,4 +1,5 @@
-# starbucks capstone
+# starbucks capstone![image](https://user-images.githubusercontent.com/53383608/110219998-5f769580-7ecb-11eb-8ddc-08a4b392c09b.png)
+
 
 ## Project Overviewn
 This is an in-depth data analysis and simulates data of how mobile app users respond to offers sent out by Starbucks. With a better understanding of customer behavior, Starbucks would be able to improve by promotional offers.
