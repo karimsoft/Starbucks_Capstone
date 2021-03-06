@@ -46,6 +46,35 @@ transcript.json (306,534 transactions x 4 fields)- records for events (transacti
     time (int) - time in hours since start of test (the data begins at time t = 0)
     value - (dict) - either an offer ID or transaction amount depending on the record
 
+## Table of Contents:
+
+    Introduction:
+        Data Viewing & Exploration
+        Data Cleaning
+    EDA Visualization
+    Data Preprcessing
+    Data Modeling
+
+## Introduction
+
+ ### Data Cleaning 
+ ### Data Preprcessing
+
+    Drop records with missing 
+    Extract data from columns containing iterable data types (i.e. lists and dictionaries) into new columns
+    Map ID hash strings to integers
+    Recast columns to appropriate data types
+ 
+ ### Data Modeling
+
+    After pre-processing the dataset and after visualization the next part is to make a model that figure out whether the customer complet to offer or not.
+
+    Here I used different types of models that will predict whether the customer complet to offer or not.
+
+    To make a model we will split the data into  training and testing data.
+ 
+    Target is the event predict complet offer or not and most offer type in 20018 year
+
 The *data* folder contains the 3 datasets provided by Udacity.
 
 The *Starbucks_Capstone_notebook.ipynb* is where all the analysis is.
