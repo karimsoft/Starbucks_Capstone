@@ -1,7 +1,11 @@
 # starbucks capstone
 
 ## Project Overviewn
-This is an in-depth data analysis and simulates data of how mobile app users respond to offers sent out by Starbucks. With a better understanding of customer behavior, Starbucks would be able to improve by promotional offers, and will be able to predict what kind of offers type will be completed in 2018 and what values are achieved.
+This is an in-depth data analysis and simulates data of how mobile app users respond to offers sent out by Starbucks. With a better understanding of customer behavior, Starbucks would be able to improve by promotional offers.
+
+## Questions:
+- What is the predict for event when have gender, age group, income group and offer type will complet offer or not in 20018 year ?
+- What is the predict for most offer type in 20018 year ?
  
 ## Main Files: Project Structure
 ```
