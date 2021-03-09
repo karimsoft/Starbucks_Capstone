@@ -17,7 +17,6 @@ This is an in-depth data analysis and simulates data of how mobile app users res
 |
 ├── README.md
 ├── Starbucks_Capstone_notebook.ipynb 
-├── Starbucks_Capstone_notebook.html
 
 ```
 
@@ -47,6 +46,19 @@ transcript.json (306,534 transactions x 4 fields)- records for events (transacti
     time (int) - time in hours since start of test (the data begins at time t = 0)
     value - (dict) - either an offer ID or transaction amount depending on the record
 
+## Problem Statement and Metrics
+-What is the most gender and age ?
+-What is the most registration members year ?
+-What is the most event in gender and age ?
+-What is the most viewed offer count in difficulty, duration, offer_type and reward ?
+-What is the most complet offer count in difficulty, duration, offer_type and reward ?
+-What is the most transcript in gender ,age and registration members for each year ?
+-What is the most offer type each age ?
+After Predict
+-What is the most gender and age in 2018 year ?
+-What is the most offer type of gender in 2018 year ?
+-What is the most offer type age in 2018 year ?
+
 ## Table of Contents:
 
     Introduction:
@@ -58,13 +70,51 @@ transcript.json (306,534 transactions x 4 fields)- records for events (transacti
 
 ## Introduction
 
- ### Data Cleaning 
- ### Data Preprcessing
+ ### Data Preprocessing and Cleaning
+Portfolio
 
-    Drop records with missing 
-    Extract data from columns containing iterable data types (i.e. lists and dictionaries) into new columns
-    Map ID hash strings to integers
-    Recast columns to appropriate data types
+-extract data into new columns from channels,offer_type column with iterable values
+
+-add offer name cloumn
+
+-rename id to offer_id
+profile
+
+-extract age is equal 118
+
+-division age 10
+
+-remove age up 90 years old
+
+-remve gender type 'O'
+
+-convert gender F to 0 and M To 1 and convert to int
+
+-convert became_member_on to date ,get year from date ,rename to reg_year and convert to int
+
+-division income 10000 and convert to int
+
+-rename id to person_id
+transcript
+
+-extract data into new columns from event
+
+-extract data into new columns from value to amount,offer_id and reward
+
+-time is hours division 24 to convert dates
+
+-rename person to person_id
+
+-rename value_offer_id to offer_id
+general
+
+-convert all number to int
+
+-join all datasets
+
+-rename some columns
+
+-drop some columns
  
  ### Data Modeling
 
