@@ -17,7 +17,7 @@ This is an in-depth data analysis and simulates data of how mobile app users res
 |
 ├── README.md
 ├── Starbucks_Capstone_notebook.ipynb 
-
+|── Starbucks_Capstone_notebook.html
 ```
 
 ## Data sets
